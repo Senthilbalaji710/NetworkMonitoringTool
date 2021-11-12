@@ -45,7 +45,7 @@ public class RoutingTable {
 	}
 
 	public String getDestination() {
-		return getDestination();
+		return destination;
 	}
 
 	public void setDestination(String destination) {
