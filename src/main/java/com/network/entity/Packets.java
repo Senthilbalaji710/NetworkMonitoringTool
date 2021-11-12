@@ -49,13 +49,13 @@ public class Packets {
 	public void setPortNumber(long portNumber) {
 		this.portNumber = portNumber;
 	}
-	public int getTime2ms() {
+	public double getTime2ms() {
 		return time2ms;
 	}
-	public void setTime2ms(int time2ms) {
+	public void setTime2ms(double time2ms) {
 		this.time2ms = time2ms;
 	}
-	public Packets(int packetId, String message, String source, String destination, long portNumber, int time2ms) {
+	public Packets(int packetId, String message, String source, String destination, long portNumber, double time2ms) {
 		super();
 		this.packetId = packetId;
 		this.message = message;
@@ -80,7 +80,7 @@ public class Packets {
 	@Column(name="portnumber")
 	private long portNumber;
 	@Column(name="Time2ms")
-	private int time2ms;
+	private double time2ms;
 
 	
 }
